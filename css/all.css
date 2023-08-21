@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #000;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.just-content-end {
+  justify-content: end;
+}
+
+.ml-3 {
+  margin-left: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 1rem;
+}
+
+.mr-3 {
+  margin-right: 1.5rem;
+}
+
+.mr-134 {
+  margin-right: 8.375rem;
+}
+
+.mb-36 {
+  margin-bottom: 2.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.py-9 {
+  padding: 4.5rem 0;
+}
+
+.py-12 {
+  padding: 6rem 0;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
+.color-white {
+  color: #fff;
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.btn:hover {
+  background-color: #1b1b1b;
+  color: #00ffa3;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #000;
+}
+
+header {
+  padding-top: 40px;
+  background-color: #000;
+}
+header h1 {
+  color: #00ffa3;
+}
+header h2 {
+  color: #fff;
+}
+
+nav li {
+  padding: 0 61px;
+}
+nav li:first-child {
+  padding-left: 0;
+}
+nav li:last-child {
+  padding-right: 0;
+}
+nav a {
+  color: #fff;
+}
+nav a:hover {
+  color: #00ffa3;
+}
+
+section {
+  padding: 10rem 0;
+}
+
+.bg-dark-img {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+  background-size: cover;
+}
+
+.bg-gradient {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.text {
+  max-width: 526px;
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 0 0 auto;
+  flex-basis: 48%;
+  padding: 16px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  margin-top: 1.5rem;
+}
+
+.social-items a {
+  display: block;
+  margin-right: 20px;
+  border-radius: 40px;
+}
+.social-items a:last-child {
+  margin-right: 0;
+}
+.social-items a:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.5s;
+}
+.social-items .icon-items {
+  width: 162px;
+  height: 162px;
+}
+.social-items .discord {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/discord.png?raw=true);
+}
+.social-items .instagram {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/instagram.png?raw=true);
+}
+.social-items .message {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/message.png?raw=true);
+}
+
+.project-intro {
+  margin-bottom: 28px;
+}
+
+.custom-title {
+  max-width: 746px;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #000;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=all.css.map */
